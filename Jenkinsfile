@@ -28,7 +28,7 @@ pipeline {
         }
     }
 }
-def CONTAINER_NAME="testProject"
+def CONTAINER_NAME="testproject"
 def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="moin123456"      // Change with you'r DockerHub username.
 def DOCKER_HUB_PASSWORD="moin123456"
