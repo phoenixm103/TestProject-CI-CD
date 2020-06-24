@@ -35,6 +35,8 @@ public class TestApplicationControllerTest {
 		}
 		@Test
 		public void testHello() {
-			assertEquals("Testing", testApplicationController.helloTest("Testing"));
+			String string="Junit";					
+	        		
+			assertEquals(string, testApplicationController.helloTest("Junit"));
 		}
 }
