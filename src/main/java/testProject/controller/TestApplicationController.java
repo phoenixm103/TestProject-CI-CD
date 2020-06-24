@@ -28,8 +28,8 @@ public class TestApplicationController {
 	}
 	
 	@RequestMapping("/hello")
-	public String helloTest(){
-		return "Hello";
+	public String helloTest(@RequestParam String string){
+		return string;
 	}
 	
 }

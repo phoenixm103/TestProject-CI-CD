@@ -1,10 +1,10 @@
 package testProject.controller;
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+
+
 
 public class TestApplicationControllerTest {
 	
@@ -19,7 +19,7 @@ public class TestApplicationControllerTest {
 		@Test
 		void testMultiplyingTwoNumbers() {
 			assertEquals(10, testApplicationController.multiply(5, 2), 
-					"Multiply method should return the sum of two numbers");
+					"Multiply method should return the product of two numbers");
 		}
 		
 		@Test
@@ -32,5 +32,9 @@ public class TestApplicationControllerTest {
 		void testAddingAPositiveAndANegative() {
 			assertEquals(0, testApplicationController.add(-1, 1), 
 					"Add method should return the sum of two numbers");
+		}
+		@Test
+		public void testHello() {
+			assertEquals("Testing", testApplicationController.helloTest("Testing"));
 		}
 }
