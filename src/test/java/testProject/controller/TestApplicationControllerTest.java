@@ -22,15 +22,4 @@ public class TestApplicationControllerTest {
 					"Multiply method should return the product of two numbers");
 		}
 
-		@Test
-		void testAddingTwoNegatives() {
-			assertEquals(-2, testApplicationController.add(-1, -1), 
-					"Add method should return the sum of two numbers");
-		}
-
-		@Test
-		void testAddingAPositiveAndANegative() {
-			assertEquals(0, testApplicationController.add(-1, 1), 
-					"Add method should return the sum of two numbers");
-		}
-}
+	}
