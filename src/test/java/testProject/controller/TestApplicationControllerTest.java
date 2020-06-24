@@ -33,10 +33,10 @@ public class TestApplicationControllerTest {
 			assertEquals(0, testApplicationController.add(-1, 1), 
 					"Add method should return the sum of two numbers");
 		}
-		@Test
-		public void testHello() {
-			String string="Junit";					
-	        		
-			assertEquals(string, testApplicationController.helloTest("Junit"));
-		}
+//		@Test
+//		public void testHello() {
+//			String string="Junit";					
+//	        		
+//			assertEquals(string, testApplicationController.helloTest("Junit"));
+//		}
 }
