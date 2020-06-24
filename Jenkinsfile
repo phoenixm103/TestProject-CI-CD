@@ -1,3 +1,11 @@
+
+def CONTAINER_NAME="testproject"
+def CONTAINER_TAG="latest"
+def DOCKER_HUB_USER="moin123456"      // Change with you'r DockerHub username.
+def DOCKER_HUB_PASSWORD="moin123456"
+def HTTP_PORT="6088"                // This is related to application port
+
+
 pipeline {
     agent any
     stages {
@@ -28,12 +36,6 @@ pipeline {
         }
     }
 }
-def CONTAINER_NAME="testproject"
-def CONTAINER_TAG="latest"
-def DOCKER_HUB_USER="moin123456"      // Change with you'r DockerHub username.
-def DOCKER_HUB_PASSWORD="moin123456"
-def HTTP_PORT="6088"                // This is related to application port
-
 def imageBuild(containerName, tag){
     sh "docker build -t $containerName:$tag  -t $containerName --pull --no-cache ."
     echo "Image build complete"
