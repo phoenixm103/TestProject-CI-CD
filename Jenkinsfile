@@ -28,11 +28,11 @@ pipeline {
         }
     }
 }
-def CONTAINER_NAME="demoapp4"
+def CONTAINER_NAME="testProject"
 def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="moin123456"      // Change with you'r DockerHub username.
 def DOCKER_HUB_PASSWORD="moin123456"
-def HTTP_PORT="6090"                // This is related to application port
+def HTTP_PORT="6088"                // This is related to application port
 
 def imageBuild(containerName, tag){
     sh "docker build -t $containerName:$tag  -t $containerName --pull --no-cache ."
