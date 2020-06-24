@@ -22,8 +22,8 @@ public class TestApplicationController {
 	}
 	
 	@RequestMapping("/hello")
-	public String helloTest(@RequestParam String string){
-		return string;
+	public String helloTest(){
+		return "Hello";
 	}
 	
 }
